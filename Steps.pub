@@ -1,5 +1,17 @@
- use git bash -> ssh-keygen -t ras -C "email@gmail.com"
+use git bash cmd
++++++++++++++++++++++++++++++++
+generate ssh rsa key : 
+ssh-keygen -t rsa -b 4096 -C "email@gmail.com"
 
- create ssh key on git hub account -> settings -> keys, now browse above generaged key from
+(can keep optional passphrase)
+ 
+generate ssh key :
+eval $(ssh-agent -s)
 
- browse this on network settins -> C:\Program Files\Git\usr\bin\ssh.exe
+add ssh key :
+ssh-add ~/.ssh/id_rsa
+
+copy ssh key to clip board:
+clip < ~/.ssh/id_rsa.pub
+
+paste key on git hub by adding ssh key
