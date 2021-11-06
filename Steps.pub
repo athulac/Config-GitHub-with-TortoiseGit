@@ -3,7 +3,7 @@ use git bash cmd
 generate ssh rsa key : 
 ssh-keygen -t rsa -b 4096 -C "email@gmail.com"
 
-(can keep optional passphrase)
+(can keep optional passphrase and location)
  
 generate ssh key :
 eval $(ssh-agent -s)
